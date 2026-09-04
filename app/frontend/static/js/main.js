@@ -1,4 +1,4 @@
-const API_URL = "https://mood-reader-api-772386422944.us-central1.run.app";
+const API_URL = "https://amount-prowling-repayment.ngrok-free.dev";
 
 const iconMap = {
       'angry': 'fa-angry',
