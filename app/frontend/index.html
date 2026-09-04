@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mood Reader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"> 
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">        
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">                            
+    <link rel="stylesheet" href="static/css/tooplate-style.css">                                   
+    <link rel="stylesheet" href="static/css/customization.css">
+</head>
+
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white justify-content-center">
+                                <a class="navbar-brand">
+                                    Mood Reader
+                                    <img src="static/img/logo mood reader.png" alt="Site logo">
+                                    Facial Expression Recognition
+                                </a>
+                                <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>                                  
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-section-2">
+            <div class="container mt-4">
+                <div class="row">
+                    
+                    <div class="col-md-6 text-center">
+                        <h2 class="tm-section-title">How to use this website</h2>
+                        <a href="information.html" class="tm-color-white tm-btn-white-bordered">More About Mood Reader!</a>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h4 class="tm-color-white">Step by step:</h4>
+
+                        <ul class="fa-ul tm-list-plus" style="font-size: 1.1rem; line-height: 1.8;">
+                            
+                            <li class="tm-color-white">
+                                <span class="fa-li tm-color-white"><i class="fa fa-arrow-circle-right"></i></span>
+                                <strong>Upload!</strong> Upload your image (JPG/PNG)!
+                            </li>
+                            
+                            <li class="tm-color-white">
+                                <span class="fa-li tm-color-white"><i class="fa fa-arrow-circle-right"></i></span>
+                                <strong>Classify!</strong> Begin the expression classifying process!
+                            </li>
+                            
+                            <li class="tm-color-white">
+                                <span class="fa-li tm-color-white"><i class="fa fa-arrow-circle-right"></i></span>
+                                <strong>Interact!</strong> Click on <span style="text-decoration: underline;">any face</span> to see the mood!
+                            </li>
+                            
+                            <li class="tm-color-white">
+                                <span class="fa-li tm-color-white"><i class="fa fa-arrow-circle-right"></i></span>
+                                <strong>Try Again:</strong> Click 'Clear' to try again!
+                            </li>
+
+                        </ul>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-section tm-position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                <polygon fill="#ee5057" points="0,0 100,0 50,60"></polygon> 
+            </svg> 
+
+            <div class="container tm-pt-5 pb-4">
+                <div class="text-center mb-5">
+                    <h2 class="tm-color-primary tm-article-title-1 mb-3">Supported Expressions</h2>
+                    <p class="text-muted">Our model is trained to recognize these 7 facial expressions. <br>Below are examples of each category.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/angry_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Anger Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Angry</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/annoyed-young-european-man-clenches-teeth-with-irritation-has-furious-expression-raises-eyebrows-anger_10521340.htm#fromView=keyword&page=1&position=23&uuid=d76c2a1f-c556-4687-b70c-a4c6b39ab262&query=Angry+face" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by wayhomestudio on Freepik
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/disgusted_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Disgust Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Disgust</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/close-up-view-annoyed-young-handsome-man-wearing-glasses-looking-front-isolated-pink-wall_13598399.htm#fromView=keyword&page=2&position=35&uuid=974a833c-92f8-4d56-b67c-359de7c35666&query=Disgusted+face" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by stockking on Freepik
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/fear_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Fear Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Fear</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/close-up-shot-scared-woman-panic-touches-her-face-shaking-from-fear-posing-white_73411530.htm#fromView=keyword&page=1&position=9&uuid=a4d88a24-8f52-4209-9f46-583d605d782d&query=Worried+face" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by benzoix on Freepik
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/happy_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Happiness Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Happy</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_19002254.htm" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by rawpixel.com on Freepik
+                                </a>
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/neutral_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Neutral Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Neutral</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/expressive-asian-girl-posing-indoor_11197707.htm#fromView=search&page=1&position=11&uuid=0a4f84b3-b4b0-4d8a-a924-f8a060962ab5&query=wajah+netral" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by shurkin_son on Freepik
+                                </a>
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/sad_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Sadness Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Sad</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/bearded-young-man-wearing-shirt_9660596.htm#fromView=search&page=1&position=0&uuid=ef64bd0c-a4c5-4f49-bbde-39557a175d18&query=sad+face" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by wayhomestudio on Freepik
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <div class="text-center">
+                            
+                            <img src="static/img/surprise_face.jpg" 
+                                 class="img-fluid rounded shadow-sm mb-3" 
+                                 alt="Surprise Expression" 
+                                 style="height: 180px; width: 100%; object-fit: cover;">
+
+                            <h5 class="tm-color-primary font-weight-bold mb-1">Surprise</h5>
+                            
+                            <small style="font-size: 0.7rem;">
+                                <a href="https://www.freepik.com/free-photo/surprised-young-pretty-woman-looking-front-isolated-green-wall_16180645.htm#fromView=search&page=1&position=2&uuid=a2697b0d-f3f2-42b4-89f1-7a3a97cce8f1&query=surprised+face" 
+                                   target="_blank" 
+                                   class="text-muted" 
+                                   style="text-decoration: none;">
+                                   Image by stockking on Freepik
+                                </a>
+                            </small>
+
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="tm-hr-primary mt-4 mb-0">
+            </div>
+
+            <div class="container tm-pt-5 tm-pb-4">
+                <div class="row g-5">
+
+                    <div class="col-md-6">
+                        <h3 class="tm-color-primary tm-article-title-1 text-center mb-4">Upload Your Picture Here!</h3>
+
+                        <div class="border rounded shadow-sm p-4 text-center" style="height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <canvas id="imagePreview" style="display: none; max-width: 100%; max-height: 280px;"></canvas>
+                            <span id="preview-text">Image preview will appear here</span>
+                        </div>
+
+                        <form id="upload-form" action="/predict" method="post" enctype="multipart/form-data" class="mt-4">
+                            <input type="file" id="file-input" name="file" accept="image/jpeg,image/jpg,image/png" style="display: none;" required>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" id="clear-input" class="btn btn-outline-primary text-uppercase tm-font-semibold mb-0">
+                                    Clear
+                                </button>
+                                
+                                <label for="file-input" id="upload-button" class="btn btn-outline-primary text-uppercase tm-font-semibold mb-0">
+                                    Upload
+                                </label>
+                                
+                                <button type="submit" id="classify-input" class="btn btn-outline-primary text-uppercase tm-font-semibold mb-0">
+                                    Classify!
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="error-area" class="alert alert-danger mt-4" style="display: none;">
+                            <strong>Error:</strong>
+                            <span id="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div id="result-placeholder" class="col-md-6 d-flex flex-column justify-content-center align-items-center" style="min-height: 400px;">
+                        <h1 class="tm-color-primary tm-article-title-1 mb-4">
+                            Result Will Appear Here!
+                        </h1>
+                        <div class="mt-3 text-muted" style="max-width: 80%;">
+                            <i class="fas fa-shield-alt fa-2x mb-2"></i> <p style="font-size: 1rem; line-height: 1.5;">
+                                Your privacy matters.<br>
+                                We do not store, save, or share any uploaded images.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="loading-indicator" class="col-md-6 text-center" style="display: none;">
+                        <h1 class="tm-color-primary tm-article-title-1 mb-4">Please wait for a moment ...</h1>
+                        <i class="fa tm-fa-6x fa-spinner fa-spin tm-color-primary tm-margin-b-20"></i>
+                    </div>
+
+                    <div id="error-no-face-result-section" class="col-md-6 text-center" style="display: none;">
+                        <h3 class="tm-color-primary tm-article-title-1 mb-4">OH NO!</h3>
+                        <i id="no-face-result-icon" class="fa tm-fa-6x fa-ERROR tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary" id="no-face-icon" style="font-size: 2.5rem; font-weight: 600;">No face detected in the image. Please upload another image!</h3>
+                    </div>
+
+                    <div id="result-section" class="col-md-6 text-center" style="display: none;">
+                        <h3 class="tm-color-primary tm-article-title-1 mb-4">I'm sensing ....</h3>
+                        <i id="result-icon" class="fa tm-fa-6x tm-color-primary tm-margin-b-20"></i>
+                        <h2 class="tm-color-primary" id="result-mood" style="font-size: 2.5rem; font-weight: 600;">ANGER</h2>
+                        <p class="mt-4" style="font-size: 1.1rem;">(And I'm <span id="result-confidence" style="font-weight: 700;">100%</span> sure about it!)</p>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+
+        <footer class="tm-bg-dark-blue">
+            <div class="container">
+                <div class="row">
+                    <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+                    Copyright &copy; <span class="tm-current-year">2025</span> IKADO
+                    
+                    - Design: <a rel="nofollow" href="https://www.tooplate.com" class="tm-color-primary tm-font-normal" target="_parent">Tooplate</a></p>        
+                </div>
+            </div>                
+        </footer>
+    </div>
+    
+    <script src="static/js/jquery-1.11.3.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script> 
+    <script src="static/js/main.js"></script>      
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $(".tm-top-bar").toggleClass("active", $(this).scrollTop() > 100);
+            });      
+
+            $('.tm-current-year').text(new Date().getFullYear());                            
+        });
+    </script>
+</body>
+</html>

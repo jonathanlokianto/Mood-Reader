@@ -1,0 +1,10 @@
+fastapi
+numpy
+Pillow
+uvicorn
+python-multipart
+h5py
+face-recognition
+tensorflow-cpu
+tflite-runtime
+uvicorn[standard]
